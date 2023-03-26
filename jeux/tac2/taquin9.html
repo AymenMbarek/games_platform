@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Taquin</title>
+<style>
+table{border-collapse:collapse;}
+td{border:1px solid black;width:40px;height:40px;text-align:center;padding}
+td.A{background-color:yellow;cursor:pointer;}
+td.B{background-color:white;}
+</style>
+<script language="JavaScript">
+<!--
+function rnd()
+{
+ hasard=Math.random()*4;
+ hasard=parseInt(Math.round(hasard));
+ return hasard;
+}
+function isB(n)
+{
+	var b=document.getElementById("t"+n);
+	return b.className=="B";
+}
+function getClass()
+{
+	for(var n=1;n<=9;n++)if(isB(n))return n;
+	return -1;
+}
+function mc(o)
+{
+	var n=parseInt(o.id.substr(1));
+	if(isB(n))return;
+	if((n<9)&&(n%3!=0)&&isB(n+1)){change(n+1,n);return;}
+	else if((n>1)&&((n-1)%3!=0)&&isB(n-1)){change(n-1,n);return;}
+	else if((n<7)&&isB(n+3)){change(n+3,n);return;}
+	else if((n>3)&&isB(n-3)){change(n-3,n);return;}
+}
+function change(x,y)
+{
+	var a=document.getElementById("t"+x);
+	var b=document.getElementById("t"+y);
+	a.innerHTML=b.innerHTML;
+	b.innerHTML="";
+	var c=a.className;
+	a.className=b.className;
+	b.className=c;
+}
+function myt(e)
+{
+	var n=getClass();
+	if(n>0)switch(e.key)
+	{
+		case "ArrowLeft":if(n%3!=0)change(n,n+1);break;
+		case "ArrowRight":if((n-1)%3!=0)change(n,n-1);break;
+		case "ArrowUp":if(n<7)change(n,n+3);break;
+		case "ArrowDown":if(n>3)change(n,n-3);break;
+	}
+}
+function melange()
+{
+	for(var i=0;i<100;i++)
+	{
+		var n=getClass();
+		if(n>0)switch(rnd())
+		{
+			case 0:if(n%3!=0)change(n,n+1);break;
+			case 1:if((n-1)%3!=0)change(n,n-1);break;
+			case 2:if(n<7)change(n,n+3);break;
+			case 3:if(n>3)change(n,n-3);break;
+		}
+	}
+}
+//--></script>
+</head><body onkeypress="myt">
+<script language="JavaScript">
+document.addEventListener('keydown',myt);
+document.addEventListener("ontouch",myt);
+document.write("<table><tr>");
+for(var i=1;i<=9;i++)
+{
+	document.write("<td id='t"+i+"' class='"+(i<9?"A":"B")+"' onclick='mc(this)'>"+i+"</td>");
+	if((i<9)&&(i%3==0))document.write("</tr><tr>");
+}
+document.write("</tr></table>");
+</script>
+<br /><br /><input type="button" value="Mélanger" onclick="melange();"></input>
+<br /><br /><a href="taquin.html">Taquin 4x4</a>
+</body>
+</html>

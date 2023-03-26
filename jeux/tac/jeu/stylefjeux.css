@@ -1,0 +1,267 @@
+body {
+font-family : Verdana,Aial,Helvetica,geneva,Sans-serif;
+position: absolute;
+font-size: 9px;
+margin : 5px;
+padding: 0;
+text-align:center;
+
+background-color: blue;
+background-image: url(soirete1.jpg);
+background-repeat: no-repeat;
+background-position: top center;
+}
+
+.bouton  {
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:url(soirete.jpg) no-repeat;
+color:white;
+}
+
+
+div#case0 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 98px;
+top: 227px;
+
+}
+
+
+
+
+
+
+div#case1 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 10px;
+top: 10px;
+
+}
+
+div#case2 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 80px;
+top: 10px;
+
+}
+div#case3 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 150px;
+top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+div#case4 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 10px;
+top: 80px;
+
+}
+
+div#case5 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 80px;
+top: 80px;
+
+}
+
+div#case6 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 150px;
+top: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div#case7 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 10px;
+top: 150px;
+
+}
+
+div#case8 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 80px;
+top: 150px;
+
+}
+   
+div#case9 {
+font-size: 18px;
+
+border-top-width: outset;
+border-right-width: outset;
+border-bottom-width: outset;
+border-left-width: outset;
+border-top-style: outset;
+border-right-style: outset;
+border-bottom-style: outset;
+border-left-style: outset;
+border-top-color: #00f1ff;
+border-right-color: #00f1ff;
+border-bottom-color: #00f1ff;
+border-left-color: #00f1ff;
+
+position: absolute;
+left: 150px;
+top: 150px;
+
+}
+
+
+
+div#copie {
+position: absolute;
+left: 1px;
+top: 1px;
+}
+
+

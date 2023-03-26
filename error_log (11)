@@ -1,0 +1,85 @@
+[21-May-2022 15:28:01 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/flayestn/public_html/config.php on line 10
+[21-May-2022 17:18:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/flayestn/public_html/config.php on line 10
+[21-May-2022 17:26:18 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/flayestn/public_html/config.php on line 10
+[21-May-2022 18:52:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/flayestn/public_html/config.php on line 10
+[21-May-2022 19:03:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 19:04:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 19:17:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 19:17:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 19:17:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 20:11:24 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 10
+[21-May-2022 20:11:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 10
+[21-May-2022 20:16:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 20:19:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 20:19:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 20:23:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/acceuil.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/acceuil.php on line 43
+[21-May-2022 21:06:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in /home/flayestn/public_html/paiement.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/flayestn/public_html/paiement.php on line 47
+[21-May-2022 21:13:58 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:1) in /home/flayestn/public_html/login.php on line 11
+[21-May-2022 21:14:27 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:1) in /home/flayestn/public_html/login.php on line 11
+[21-May-2022 21:14:33 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:1) in /home/flayestn/public_html/login.php on line 11
+[21-May-2022 21:15:37 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:1) in /home/flayestn/public_html/login.php on line 11
+[21-May-2022 21:26:17 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/flayestn/public_html/config.php on line 8
+[21-May-2022 21:27:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/flayestn/public_html/config.php on line 8
+[21-May-2022 21:51:59 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 13
+[21-May-2022 21:51:59 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 13
+[21-May-2022 21:52:43 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 13
+[21-May-2022 21:52:43 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 13
+[21-May-2022 22:11:40 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 13
+[21-May-2022 22:11:40 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 13
+[21-May-2022 22:13:34 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 15
+[21-May-2022 22:13:34 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/flayestn/public_html/config.php on line 15
+[21-May-2022 22:14:55 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/flayestn/public_html/config.php on line 11
+[21-May-2022 22:15:46 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:2) in /home/flayestn/public_html/login.php on line 12
+[21-May-2022 22:16:02 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:2) in /home/flayestn/public_html/login.php on line 12
+[21-May-2022 22:16:52 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/login.php:2) in /home/flayestn/public_html/login.php on line 12
+[21-May-2022 22:24:24 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 49
+[21-May-2022 22:24:24 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/flayestn/public_html/compte.php on line 70
+[21-May-2022 22:24:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/flayestn/public_html/compte.php on line 73
+[21-May-2022 22:24:24 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/flayestn/public_html/compte.php on line 76
+[21-May-2022 22:24:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/flayestn/public_html/compte.php on line 79
+[21-May-2022 22:24:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/flayestn/public_html/compte.php on line 80
+[21-May-2022 22:25:16 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 49
+[21-May-2022 22:26:39 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 4
+[21-May-2022 22:27:19 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 20
+[21-May-2022 22:27:58 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:32:55 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:34:04 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:36:48 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:36:50 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:37:46 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:38:33 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:38:42 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 5
+[21-May-2022 22:39:52 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 6
+[21-May-2022 22:40:05 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/compte.php:1) in /home/flayestn/public_html/compte.php on line 4
+[22-May-2022 09:11:33 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/acceuil.php:2) in /home/flayestn/public_html/acceuil.php on line 7
+[22-May-2022 09:11:52 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/flayestn/public_html/acceuil.php:2) in /home/flayestn/public_html/acceuil.php on line 6

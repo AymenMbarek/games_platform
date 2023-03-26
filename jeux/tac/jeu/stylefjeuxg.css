@@ -1,0 +1,165 @@
+
+
+body {
+font-family : Verdana,Aial,Helvetica,geneva,Sans-serif;
+position: relative;
+font-size: 9px;
+margin : 0px;
+padding: 0px;
+text-align:center;
+
+background-color: blue;
+background-image: url(mg1.jpg);
+background-repeat: no-repeat;
+background-position: top center;
+}
+
+
+
+
+.bouton  {
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:url(01.gif) no-repeat;
+color:black;
+}
+
+div#case0 {
+font-size: 18px;
+position: absolute;
+left: 220px;
+top: 110px;
+
+}
+
+
+
+div#case1 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 10px;
+top: 10px;
+
+
+}
+
+div#case2 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 80px;
+top: 10px;
+
+}
+div#case3 {
+font-size: 18px;
+
+
+position: absolute;
+left: 150px;
+top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+div#case4 {
+font-size: 18px;
+
+
+position: absolute;
+left: 10px;
+top: 80px;
+
+}
+
+div#case5 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 80px;
+top: 80px;
+
+}
+
+div#case6 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 150px;
+top: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div#case7 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 10px;
+top: 150px;
+
+}
+
+div#case8 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 80px;
+top: 150px;
+
+}
+   
+div#case9 {
+font-size: 18px;
+
+
+
+position: absolute;
+left: 150px;
+top: 150px;
+
+}
+
+
+div#copie {
+position: absolute;
+left: 1px;
+top: 1px;
+}
+
+
+

@@ -1,0 +1,852 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+
+
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html/js; charset=windows-1252">
+	<TITLE>jeux 9cases</TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (part1 débian part2 Win32)">
+	<META NAME="AUTHOR" CONTENT="franck">
+	<META NAME="CREATED" CONTENT="20081129;18320015">
+	<META NAME="CHANGEDBY" CONTENT="francknoveau10072010">
+	<META NAME="CHANGED" CONTENT="20090628;18462446">
+
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+//<!--
+   // base début http://www.aliasdmc.fr/coursjavas/
+var nav=(navigator.appName).toLowerCase(); 
+
+ if (nav =="microsoft internet explorer")
+{ 
+document.write('<Link href="stylefjeux.css" rel="stylesheet" type="text/css">'); 
+}
+
+else{ 
+document.write('<Link href="stylefjeuxg.css" rel="stylesheet" type="text/css">'); 
+}
+
+
+ // -->
+
+</SCRIPT>
+
+</HEAD>
+
+<body LANG="fr-FR">
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+//<!--
+
+var xcase1=1;
+var xcase2=2;
+var xcase3=3;
+var xcase4=4;
+var xcase5=5;
+var xcase6=6;
+var xcase7=7;
+var xcase8=8;
+
+var xcase9=0;
+
+
+var chois1=0;
+var chois2=0;
+var chois3=0;
+var chois4=0;
+var chois5=0;
+var chois6=0;
+var chois7=0;
+var chois8=0;
+var chois9=0;
+
+
+var xnumber=Math.round(Math.random()*81);
+
+var somm=0;
+var poin=0;
+var toppos1= [1,2,3,4,5,6,7,8,0];
+// -->
+
+
+
+</SCRIPT>
+
+ <form name="jeu1">
+
+<div id="case0">
+<P><INPUT TYPE=TEXT NAME="point" VALUE="" size="2"><FORM ACTION="index.html" METHOD="get"><input type="submit" value="nouveau"></p>
+ </div>
+
+<div id="case1">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton1" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc1()"></p>
+ </div>
+
+
+<div id="case2">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton2" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc2()"></p>
+ </div>
+
+
+<div id="case3">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton3" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc3()"></p>
+ </div>
+
+<div id="case4">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton4" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc4()"></p>
+ </div>
+
+<div id="case5">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton5" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc5()"></p>
+ </div>
+
+<div id="case6">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton6" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc6()"></p>
+ </div>
+
+<div id="case7">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton7" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc7()"></p>
+ </div>
+
+<div id="case8">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton8" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc8()"></p>
+ </div>
+
+
+ <div id="case9">
+<P><INPUT class="bouton" TYPE=BUTTON NAME="PushButton9" VALUE="" STYLE="width: 1.8cm; height: 1.8cm" onclick="doc9()"></p>
+ </div>
+ </form>
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+
+
+//<!--
+
+
+
+do {
+
+if (xcase1==0)
+{
+var chois1 =Math.round(Math.random()*1);
+
+
+if (chois1==0){
+
+xcase1=xcase2;
+xcase2=0;
+
+ 
+
+}
+
+if (chois1==1){
+xcase1=xcase4;
+xcase4=0;
+
+
+}
+
+}
+// -------------------------------------------------------------------------------------------------
+
+
+if (xcase2==0)
+{
+var chois2 =Math.round(Math.random()*2);
+
+
+
+if (chois2==0){
+
+xcase2=xcase1;
+xcase1=0;
+
+
+}
+if (chois2==1){
+
+xcase2=xcase3;
+xcase3=0;
+
+
+}
+
+if (chois2==2){
+
+xcase2=xcase5;
+xcase5=0;
+
+ } 
+
+
+}
+
+
+// ---------------------------------------------------------------------------------
+
+
+if (xcase3==0)
+{
+
+
+var chois3 =Math.round(Math.random()*1);
+
+
+
+if (chois3==0){
+
+xcase3=xcase2;
+xcase2=0;
+
+
+
+}
+
+
+if (chois3==1){
+
+xcase3=xcase6;
+xcase6=0;
+
+ 
+
+}
+
+}
+
+
+// ------------------------------------------------------------------------------------------------
+
+
+if (xcase4==0)
+{
+
+var chois4 =Math.round(Math.random()*2);
+
+
+
+if (chois4==0){
+xcase4=xcase1;
+xcase1=0;
+
+}
+
+
+if (chois4==1){
+xcase4=xcase5;
+xcase5=0;
+ 
+}
+
+
+
+if (chois4==2){
+xcase4=xcase7;
+xcase7=0;
+
+}
+
+
+}
+
+// -------------------------------------------------------
+
+if (xcase5==0)
+{
+var chois5 =Math.round(Math.random()*3);
+
+
+if (chois5==0){
+xcase5=xcase2;
+xcase2=0;
+
+
+}
+
+if (chois5==1){
+xcase5=xcase4;
+xcase4=0;
+  
+
+}
+
+if (chois5==2){
+xcase5=xcase6;
+xcase6=0;
+
+
+}
+
+if (chois5==3){
+xcase5=xcase8;
+xcase8=0;
+
+
+
+}
+
+
+}
+
+// ----------------------------------------------------
+
+
+if (xcase6==0)
+{
+var chois6 =Math.round(Math.random()*2);
+
+
+
+
+if (chois6==0){
+xcase6=xcase3;
+xcase3=0;
+
+
+
+}
+
+
+if (chois6==1){
+xcase6=xcase5;
+xcase5=0;
+
+
+}
+
+
+
+if (chois6==2){
+xcase6=xcase9;
+xcase9=0;
+
+
+}
+}
+
+// ---------------------------------------------------------------------------------------------
+
+if (xcase7==0)
+{
+
+var chois7 =Math.round(Math.random()*1);
+
+
+
+if (chois7==0){
+xcase7=xcase4;
+xcase4=0;
+ 
+
+}
+
+
+
+if (chois7==1){
+xcase7=xcase8;
+xcase8=0;
+
+  
+}
+
+
+}
+
+
+//----------------------------------------------------------------------------------------------
+
+if (xcase8==0)
+{
+var chois8 =Math.round(Math.random()*2);
+
+
+
+if (chois8==0){
+xcase8=xcase7;
+xcase7=0;
+
+ 
+}
+
+
+
+if (chois8==1){
+xcase8=xcase5;
+xcase5=0;
+
+  
+}
+
+
+
+
+if (chois8==2){
+xcase8=xcase9;
+xcase9=0;
+  
+}
+
+}
+
+
+
+// --------------------------------------------
+
+if (xcase9==0)
+{
+
+var chois9 =Math.round(Math.random()*1);
+
+
+
+if (chois9==0){
+
+xcase9=xcase6;
+xcase6=0;
+
+}
+
+
+
+
+if (chois9==1){
+xcase9=xcase8;
+xcase8=0;
+
+
+}
+
+
+}
+
+++xnumber;
+
+
+ } while(xnumber < 101);
+
+
+ document.forms.jeu1.PushButton1.value = xcase1;
+ document.forms.jeu1.PushButton2.value = xcase2;
+ document.forms.jeu1.PushButton3.value = xcase3;
+ document.forms.jeu1.PushButton4.value = xcase4;
+ document.forms.jeu1.PushButton5.value = xcase5;
+document.forms.jeu1.PushButton6.value = xcase6;
+ document.forms.jeu1.PushButton7.value = xcase7;
+document.forms.jeu1.PushButton8.value = xcase8;
+ document.forms.jeu1.PushButton9.value = xcase9;
+ result();
+
+
+ function doc1()
+{
+var case1 = Number(document.forms.jeu1.PushButton1.value);
+ var case2 = Number(document.forms.jeu1.PushButton2.value);
+  var case4 = Number(document.forms.jeu1.PushButton4.value);
+
+if (case2==0)
+{
+document.forms.jeu1.PushButton2.value = case1;
+document.forms.jeu1.PushButton1.value = case2;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case4==0)
+{
+document.forms.jeu1.PushButton1.value = case4;
+document.forms.jeu1.PushButton4.value = case1;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+}
+
+
+ function doc2()
+{
+var case2 = Number(document.forms.jeu1.PushButton2.value);
+ var case1 = Number(document.forms.jeu1.PushButton1.value);
+  var case3 = Number(document.forms.jeu1.PushButton3.value);
+    var case5 = Number(document.forms.jeu1.PushButton5.value);
+
+if (case1==0)
+{
+document.forms.jeu1.PushButton2.value = case1;
+document.forms.jeu1.PushButton1.value = case2;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case3==0)
+{
+document.forms.jeu1.PushButton3.value = case2;
+document.forms.jeu1.PushButton2.value = case3;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+ if (case5==0)
+{
+document.forms.jeu1.PushButton5.value = case2;
+document.forms.jeu1.PushButton2.value = case5;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+}
+
+
+ 
+
+ function doc3()
+{
+var case3 = Number(document.forms.jeu1.PushButton3.value);
+ var case2 = Number(document.forms.jeu1.PushButton2.value);
+  var case6 = Number(document.forms.jeu1.PushButton6.value);
+
+if (case2==0)
+{
+document.forms.jeu1.PushButton2.value = case3;
+document.forms.jeu1.PushButton3.value = case2;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case6==0)
+{
+document.forms.jeu1.PushButton3.value = case6;
+document.forms.jeu1.PushButton6.value = case3;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+}
+
+
+
+
+
+
+
+
+
+ function doc4()
+{
+var case4 = Number(document.forms.jeu1.PushButton4.value);
+ var case1 = Number(document.forms.jeu1.PushButton1.value);
+  var case7 = Number(document.forms.jeu1.PushButton7.value);
+  var case5 = Number(document.forms.jeu1.PushButton5.value);
+
+if (case1==0)
+{
+document.forms.jeu1.PushButton4.value = case1;
+document.forms.jeu1.PushButton1.value = case4;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case7==0)
+{
+document.forms.jeu1.PushButton4.value = case7;
+document.forms.jeu1.PushButton7.value = case4;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+ 
+  if (case5==0)
+{
+document.forms.jeu1.PushButton4.value = case5;
+document.forms.jeu1.PushButton5.value = case4;
+document.forms.jeu1.point.value = ++poin;
+result();
+
+}
+
+
+}
+
+
+
+ function doc5()
+{
+var case5 = Number(document.forms.jeu1.PushButton5.value);
+ var case2 = Number(document.forms.jeu1.PushButton2.value);
+  var case4 = Number(document.forms.jeu1.PushButton4.value);
+  var case6 = Number(document.forms.jeu1.PushButton6.value);
+    var case8 = Number(document.forms.jeu1.PushButton8.value);
+
+if (case2==0)
+{
+document.forms.jeu1.PushButton5.value = case2;
+document.forms.jeu1.PushButton2.value = case5;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case4==0)
+{
+document.forms.jeu1.PushButton5.value = case4;
+document.forms.jeu1.PushButton4.value = case5;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+ 
+  if (case6==0)
+{
+document.forms.jeu1.PushButton5.value = case6;
+document.forms.jeu1.PushButton6.value = case5;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+  if (case8==0)
+{
+document.forms.jeu1.PushButton5.value = case8;
+document.forms.jeu1.PushButton8.value = case5;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+}
+
+
+ function doc6()
+{
+var case6 = Number(document.forms.jeu1.PushButton6.value);
+ var case3 = Number(document.forms.jeu1.PushButton3.value);
+  var case5 = Number(document.forms.jeu1.PushButton5.value);
+  var case9 = Number(document.forms.jeu1.PushButton9.value);
+
+if (case3==0)
+{
+document.forms.jeu1.PushButton6.value = case3;
+document.forms.jeu1.PushButton3.value = case6;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case5==0)
+{
+document.forms.jeu1.PushButton6.value = case5;
+document.forms.jeu1.PushButton5.value = case6;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+ 
+  if (case9==0)
+{
+document.forms.jeu1.PushButton6.value = case9;
+document.forms.jeu1.PushButton9.value = case6;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+}
+
+
+
+
+ function doc7()
+{
+var case7 = Number(document.forms.jeu1.PushButton7.value);
+ var case4 = Number(document.forms.jeu1.PushButton4.value);
+  var case8 = Number(document.forms.jeu1.PushButton8.value);
+
+if (case4==0)
+{
+document.forms.jeu1.PushButton7.value = case4;
+document.forms.jeu1.PushButton4.value = case7;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case8==0)
+{
+document.forms.jeu1.PushButton7.value = case8;
+document.forms.jeu1.PushButton8.value = case7;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+
+}
+
+
+ function doc8()
+{
+var case8 = Number(document.forms.jeu1.PushButton8.value);
+ var case5 = Number(document.forms.jeu1.PushButton5.value);
+  var case7 = Number(document.forms.jeu1.PushButton7.value);
+    var case9 = Number(document.forms.jeu1.PushButton9.value);
+
+if (case5==0)
+{
+document.forms.jeu1.PushButton8.value = case5;
+document.forms.jeu1.PushButton5.value = case8;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case7==0)
+{
+document.forms.jeu1.PushButton8.value = case7;
+document.forms.jeu1.PushButton7.value = case8;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+ if (case9==0)
+{
+document.forms.jeu1.PushButton8.value = case9;
+document.forms.jeu1.PushButton9.value = case8;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+}
+
+ function doc9()
+{
+var case9 = Number(document.forms.jeu1.PushButton9.value);
+ var case6 = Number(document.forms.jeu1.PushButton6.value);
+  var case8 = Number(document.forms.jeu1.PushButton8.value);
+
+if (case6==0)
+{
+document.forms.jeu1.PushButton9.value = case6;
+document.forms.jeu1.PushButton6.value = case9;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+ if (case8==0)
+{
+document.forms.jeu1.PushButton9.value = case8;
+document.forms.jeu1.PushButton8.value = case9;
+document.forms.jeu1.point.value = ++poin;
+result();
+ }
+
+
+
+}
+
+function result()
+{
+
+var case1 = Number(document.forms.jeu1.PushButton1.value);
+ var case2 = Number(document.forms.jeu1.PushButton2.value);
+  var case3 = Number(document.forms.jeu1.PushButton3.value);
+var case4 = Number(document.forms.jeu1.PushButton4.value);
+ var case5 = Number(document.forms.jeu1.PushButton5.value);
+  var case6 = Number(document.forms.jeu1.PushButton6.value);
+var case7 = Number(document.forms.jeu1.PushButton7.value);
+ var case8 = Number(document.forms.jeu1.PushButton8.value);
+  var case9 = Number(document.forms.jeu1.PushButton9.value);
+
+if (case1==1)
+{
+++somm;
+}
+
+if (case2==2)
+{
+++somm;
+}
+if (case3==3)
+{
+++somm;
+}
+if (case4==4)
+{
+++somm;
+}
+if (case5==5)
+{
+++somm;
+}
+
+if (case6==6)
+{
+++somm;
+}
+if (case7==7)
+{
+++somm;
+}
+if (case8==8)
+{
+++somm;
+}
+
+if (somm==8)
+{
+window.location.href=("good.html");
+}
+else
+{
+somm=0;
+}
+
+
+ if (case1==0)
+{document.forms.jeu1.PushButton1.value = "";}
+
+
+ if (case2==0)
+{document.forms.jeu1.PushButton2.value = "";}
+
+ if (case3==0)
+{document.forms.jeu1.PushButton3.value = "";}
+
+ if (case4==0)
+{document.forms.jeu1.PushButton4.value = "";}
+ if (case5==0)
+{document.forms.jeu1.PushButton5.value = "";}
+ if (case6==0)
+{document.forms.jeu1.PushButton6.value = "";}
+ if (case7==0)
+{document.forms.jeu1.PushButton7.value = "";}
+ if (case8==0)
+{document.forms.jeu1.PushButton8.value = "";}
+   if (case9==0)
+{document.forms.jeu1.PushButton9.value = "";}
+
+
+
+
+
+
+
+
+
+}
+
+ // -->
+
+</SCRIPT>
+<div id="copie">
+<a href="http://www.gnu.org/philosophy/free-sw.fr.html">copiewebimage</a>
+</div>
+</body>
+
+
+
+</html>
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Recherche taquin 3x3</title>
+<style>
+div{page-break-before:always;}
+table,td{border:1px solid black;border-collapse:collapse;}
+td{width:30px;height:30px;text-align:center;background-color:cyan;}
+td.a{background-color:yellow;}
+</style></head><body><pre><script>
+
+'use strict';
+
+var solut="123456780";//fin
+var JEU=solut.slice()// début
+
+const ga=0;
+const dr=1;
+const ha=2;
+const ba=3;
+const sens=["gauche","droite","haut","bas"];
+var sol=[];//array de 0 à ... de toute la solution
+var sols=[];//string de tous les coups pour la solution 
+var total;//toutes les positions calculées
+var ici=null;//le jeu de base (au début), un objet taquin
+
+function rnd(x=4) // 0 <= entier < x, soit x possibilités
+{
+	return parseInt(Math.round(Math.random()*x));
+}
+
+function deja(J)//retourne true si cette position existe déjà
+{ // on commence par la fin "plus proche" de la position en cours
+	for(let n=mesjeux.length-1;n>=0;n--)//on essaye toutes les positions précédentes
+		if(mesjeux[n]==J)return true;
+	return false;
+}
+function ecrit(J)
+{//on "écrit" le jeu à l'écran
+	document.write("<table>");
+	for(let j=0;j<3;j++)
+	{
+		document.write("<tr>");
+		for(let i=0;i<3;i++)
+		{
+			let c=J[j*3+i];
+			if(c!='0')document.write("<td>"+c+"</td>");
+			else document.write("<td class='a'></td>");
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+}
+
+function swap(J,j,sens)
+{
+	J=J.split('');
+	switch(sens)
+	{
+		case ga:J[j]=J[j+1];J[j+1]=0;break;
+		case dr:J[j]=J[j-1];J[j-1]=0;break;
+		case ha:J[j]=J[j+3];J[j+3]=0;break;
+		case ba:J[j]=J[j-3];J[j-3]=0;break;
+	}
+	return J.join('');
+}
+
+function melange(JEU,k)
+{
+	for(let n=0;n<k;)
+	{
+		let u=JEU.indexOf('0');
+		let i=u%3;
+		let j=(u-i)/3;
+		switch(rnd())
+		{
+			case ga:if(i<2){n++;JEU=swap(JEU,u,ga);}break;
+			case dr:if(i>0){n++;JEU=swap(JEU,u,dr);}break;
+			case ha:if(j<2){n++;JEU=swap(JEU,u,ha);}break;
+			case ba:if(j>0){n++;JEU=swap(JEU,u,ba);}break;
+		}
+	}
+	return JEU;
+}
+JEU=melange(JEU,1000);
+//JEU="123456870";//un jeu impossible => 9!/2 = 181440 positions différentes
+var mesjeux=[JEU.slice()];//stockage des positions différentes, et on stocke la 1ère
+
+function coups(j)// J[j] est vide il peut y avoir un déplacement ou +
+{
+	let P=[];
+	let i=j%3;
+	j=(j-i)/3;
+	if(i<2)P.push(ga);
+	if(i>0)P.push(dr);
+	if(j<2)P.push(ha);
+	if(j>0)P.push(ba);
+	return P;//retourne les déplacements possibles
+}
+
+class taquin//pour recherche d'une solution
+{
+	constructor(s,debut=true)
+	{
+		this.io=s.slice();//le jeu
+		this.frere=null;//toute les possibilités de mouvements (les fils)
+		if(debut)
+		{
+			this.txt="";//le mouvement
+			this.niveau=0;//profondeur de recherche
+			this.parent=null;//le jeu parent dont celui-ci est issu
+		}
+	}
+	print(a)
+	{//on écrit le jeu "à l'écran"
+		ecrit(this.io);
+		if(this.niveau==0)document.write("<br/>Jeu résolu en "+a+" coups :<br/><br/>");
+		else
+			document.write("Coup n°"+this.niveau+" : "+sens[this.txt]+"<br/><br/>");
+		if(this.niveau>0)sols+=this.txt+" ";
+	}
+	test(niv)//on "teste" le niveau
+	{
+		let x=this;
+		while(x!=null)
+		{
+			if(x.run(niv))return true;//solution trouvée
+			x=x.frere;//pour tous les "freres"
+		}
+		return false;
+	}
+	getFrere()
+	{
+		let r=this;
+		while(r.frere!=null)r=r.frere;
+		return r;
+	}
+	solution()
+	{
+		sol[this.niveau]=this;
+		if(this.parent!=null)this.parent.solution();
+		else this.txt="";
+	}
+	addFrere(dummy,t)
+	{
+		total++;
+		if(!deja(dummy.io))//cette position n'existe pas déjà
+		{
+			mesjeux.push(dummy.io);//on la stocke
+			this.getFrere().frere=dummy;
+			dummy.parent=this;
+			dummy.niveau=this.niveau+1;
+			dummy.txt=t;
+			if(dummy.io==solut){sol=[];sols="";dummy.solution();return true;}
+		}
+		return false;
+	}
+	run(niv)
+	{
+		if(niv!=this.niveau)return false;//pour chaque niveau de profondeur de recherche uniquement
+		let j=this.io.indexOf('0');
+		let P=coups(j);//on recherche les déplacements possibles
+		P.sort((a, b) => 0.5 - Math.random());//essais dans le désordre
+		for(let n=0;n<P.length;n++)//pour tous les déplacements possibles
+		{
+			let dummy=new taquin(this.io,false);
+			let s=P[n];
+			dummy.io=swap(dummy.io,j,s);
+			if(this.addFrere(dummy,s))return true;
+		}
+		return false;
+	}
+	resoud()
+	{
+		if(this.io!=solut)//au cas ou le niveau 0 est déjà résolu
+		{
+			for(let n=0;n<100;n++)// profondeur de recherche
+				if(this.test(n))
+					return true;
+			this.txt="Pas de solution pour ce tableau<br /><br />";
+		}
+		else this.txt="Ce jeu est déjà résolu !<br /><br />";
+		document.write(this.txt);
+		return false;
+	}
+}
+
+function ms(x)
+{
+	let s=x%60;
+	return parseInt((x-s)/60) + "'" + parseInt(s) +'"'; 
+}
+
+function main()
+{
+	ici=new taquin(JEU);//jeu à résoudre...
+	total=0;
+	let startTime = new Date().getTime();
+	let result=ici.resoud();
+	let elapsedTime = ms((new Date().getTime() - startTime)/1000);
+	document.write(elapsedTime+' pour rechercher une solution en javascript<br/><br/>');
+	document.write("Il y a eu "+(total+1)+" positions analysées dont "+mesjeux.length+" positions différentes<br /><br />");
+	for(let i=0;i<sol.length;i++)
+		sol[i].print(sol.length-1);
+	if(result)
+	{
+		document.write("<br/>0 gauche\n1 droite\n2 haut\n3 bas\nTous les coups :<br/>"+sols+"<br/><br/><br/><br/>");
+	}
+}
+main();
+</script></pre></body></html>
